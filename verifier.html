@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProofPart – Vérifier une pièce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ProofPart</h1>
+  </header>
+
+  <main>
+    <a href="index.html" class="retour">← Retour à l'accueil</a>
+
+    <h2>Vérifier une pièce</h2>
+    <p>Entrez l'identifiant inscrit sur l'étiquette de la pièce.</p>
+
+    <!-- Le formulaire : au clic sur "Vérifier", le navigateur ouvre
+         passeport.html?id=CE_QUI_A_ÉTÉ_TAPÉ -->
+    <form action="passeport.html" method="get">
+      <input type="text" name="id" placeholder="Ex. PHARE-001" required>
+      <button type="submit">Vérifier</button>
+    </form>
+
+    <p class="aide">Bientôt : approchez simplement votre téléphone de la puce de la pièce.</p>
+  </main>
+
+</body>
+</html>

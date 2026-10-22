@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!-- Indique au navigateur que c'est une page HTML moderne -->
+<html lang="fr"> <!-- Début de la page ; la langue est le français -->
+
+<head> <!-- Réglages invisibles de la page -->
+  <meta charset="UTF-8"> <!-- Permet d'afficher les accents (é, è, à...) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapte la page à la largeur du téléphone -->
+  <title>ProofPart – Passeport de la pièce</title> <!-- Texte affiché dans l'onglet du navigateur -->
+  <link rel="stylesheet" href="style.css"> <!-- Relie le fichier de style -->
+</head>
+
+<body> <!-- Tout ce qui est visible à l'écran -->
+
+  <header> <!-- Bandeau du haut -->
+    <h1>ProofPart</h1> <!-- Titre principal (h1 = le plus gros titre) -->
+  </header>
+
+  <main> <!-- Contenu principal : la carte de la pièce -->
+
+            <a href="verifier.html" class="retour">← Vérifier une autre pièce</a>
+    <p id="statut" class="statut"></p>      <!-- Badge, rempli par le JavaScript -->
+    <h2 id="designation"></h2>               <!-- Nom de la pièce -->
+    <p>Identifiant : <span id="reference"></span></p>
+    <p>Compatible : <span id="compatible"></span></p>
+
+    <h3>Historique</h3>
+    <ul id="historique"></ul>                <!-- Liste vide, remplie par le JavaScript -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>  <!-- La bibliothèque ethers.js -->
+  <script src="blockchain.js"></script>  <!-- Lecture de la blockchain -->  <!-- 1) Charge d'abord les données -->
+  <script src="app.js"></script>      <!-- 2) Puis le code qui les affiche -->
+
+</body>
+</html> <!-- Fin de la page -->

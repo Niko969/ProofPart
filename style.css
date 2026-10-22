@@ -1,0 +1,119 @@
+/* ===== Réglages généraux de la page ===== */
+body {
+  margin: 0;                          /* Supprime la marge par défaut autour de la page */
+  font-family: -apple-system, "Segoe UI", Roboto, sans-serif; /* Police : celle du système, plus moderne */
+  background-color: #f4f5f7;          /* Fond gris très clair */
+  color: #1d2329;                     /* Couleur du texte : presque noir */
+}
+
+/* ===== Bandeau du haut ===== */
+header {
+  background-color: #1d2329;          /* Fond sombre */
+  color: white;                       /* Texte blanc */
+  padding: 16px;                      /* Espace intérieur de 16 pixels */
+}
+
+header h1 {                           /* Le titre h1 qui se trouve DANS le header */
+  margin: 0;                          /* Pas d'espace autour du titre */
+  font-size: 20px;                    /* Taille du texte */
+}
+
+/* ===== La carte principale ===== */
+main {
+  background-color: white;            /* Fond blanc pour faire ressortir la carte */
+  margin: 16px;                       /* Espace extérieur : décolle la carte des bords */
+  padding: 20px;                      /* Espace intérieur : décolle le texte des bords de la carte */
+  border-radius: 12px;                /* Coins arrondis */
+  max-width: 480px;                   /* Largeur maximale : la carte ne s'étire pas trop sur ordinateur */
+}
+
+/* ===== Le badge de statut ===== */
+.statut {                             /* Le point = on cible la CLASSE "statut" */
+  display: inline-block;              /* Le badge prend la largeur de son texte, pas toute la ligne */
+  background-color: #6b7280;          /* Vert = conforme */
+  color: white;
+  font-weight: bold;                  /* Texte en gras */
+  padding: 6px 14px;                  /* 6px en haut et en bas, 14px à gauche et à droite */
+  border-radius: 999px;               /* Arrondi maximal = forme de pilule */
+}
+
+/* ===== L'historique ===== */
+ul {
+  padding-left: 18px;                 /* Réduit le décalage à gauche de la liste */
+}
+
+li {
+  margin-bottom: 8px;                 /* Espace entre chaque événement */
+}
+/* ===== Couleur du badge selon le statut ===== */
+.conforme { background-color: #2e8b57; }   /* Vert */
+.stock    { background-color: #2e8b57; }   /* Vert : pièce en stock chez un pro, conforme */
+.volee    { background-color: #c0392b; }   /* Rouge */
+.rebut    { background-color: #7f8c8d; }   /* Gris foncé */
+/* ===== Liens ===== */
+a {
+  color: #1d6fd1;                     /* Bleu pour les liens */
+}
+
+.retour {
+    display: block; 
+  margin-bottom: 12px;
+  text-decoration: none;              /* Supprime le soulignement */
+}
+
+/* ===== Bouton principal ===== */
+.bouton {
+  display: block;                     /* Prend toute la largeur : facile à toucher sur téléphone */
+  text-align: center;
+  background-color: #1d2329;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 20px 0;                     /* 20px en haut et en bas, 0 sur les côtés */
+}
+
+/* ===== Statut inconnu ===== */
+.inconnue { background-color: #d68910; }   /* Orange : prudence */
+
+/* ===== Formulaire de vérification ===== */
+form {
+  display: flex;                      /* Place le champ et le bouton côte à côte */
+  gap: 8px;                           /* Espace entre les deux */
+  margin: 16px 0;
+}
+
+input {
+  flex: 1;                            /* Le champ prend toute la place disponible */
+  padding: 12px;
+  font-size: 16px;                    /* 16px minimum : sinon l'iPhone zoome quand on tape */
+  border: 1px solid #c8ccd2;
+  border-radius: 8px;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #1d2329;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;                    /* Curseur en forme de main au survol */
+}
+
+/* ===== Petit texte d'aide ===== */
+.aide {
+  color: #6b7280;                     /* Gris : information secondaire */
+  font-size: 14px;
+}
+
+.posee { background-color: #2e8b57; }   /* Vert : pièce posée, conforme */
+
+.lien-secondaire {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  color: #2563eb;
+}

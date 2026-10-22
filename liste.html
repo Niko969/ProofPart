@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProofPart – Toutes les pièces</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>ProofPart</h1>
+  </header>
+
+  <main>
+    <a href="index.html" class="retour">← Retour à l'accueil</a>
+
+    <h2>Pièces enregistrées</h2>
+    <p id="message"></p>      <!-- Message d'attente, nombre de pièces ou erreur -->
+    <ul id="liste"></ul>      <!-- Rempli par liste.js -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.4/dist/ethers.umd.min.js"></script>
+  <script src="blockchain.js"></script>
+  <script src="liste.js"></script>
+
+</body>
+</html>
