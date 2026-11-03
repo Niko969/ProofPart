@@ -83,5 +83,4 @@ Smart contract ProofPart V1 (Solidity) sur Ethereum Sepolia
 
 Projet réalisé dans le cadre du PPE du Master Management de l'Innovation, Sorbonne Université (2026-2027).
 
-- Nicolas Ramirez Vidal : blockchain, smart contract et site
-- *[À compléter avec les membres du groupe et leur rôle]*
+-
